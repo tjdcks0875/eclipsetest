@@ -1,0 +1,115 @@
+.head_article {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.tit {
+    height: 36px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333;
+    letter-spacing: -.5px;
+}
+
+.member_hack {
+    border-bottom: 1px solid #f7f7f7;
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.tb1_comm {    
+    width: 100%;
+    border-top: 2px solid #333;
+}
+
+.member_hack th {
+    width: 159px;
+    padding: 20px 0 0 20px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.member_hack td {
+    padding: 10px 0;
+    border-top: 0;
+    font-size: 14px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.member_hack label {
+    display: block;
+    padding: 15px 0 13px;
+    float: left;
+    width: 50%;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+input[type="checkbox"] +.ico {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    border: 0;
+    background: url(https://res.kurly.com/pc/service/common/2006/ico_checkbox.svg) no-repeat 50% 50%;
+    background-size: 24px 24px;
+    vertical-align: -7px;
+}
+
+input[type="checkbox"]:checked + .ico {
+    background: url(https://res.kurly.com/pc/service/common/2006/ico_checkbox_checked.svg) no-repeat 50% 50%;
+}
+
+.member_hack textarea {
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    width: 120px;
+    margin-left: 5px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.btn.default {
+    background-color: #e74c3c;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 5px 25px;
+}
+
+.btn.active {
+    background-color: #e74c3c;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 5px 25px;
+}
+
+.formSubmit {
+    margin-bottom: 100px;
+}
+
+textarea {
+    border: 1px solid black;
+}

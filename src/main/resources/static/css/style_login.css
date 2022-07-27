@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+/*1. 공통부분 작성*/
+html {
+    font-size : 100%;
+}
+
+body {
+    font-family: "나눔고딕", NanumGothic, "맑은고딕", MalagunGothic, "Apple SD Gothic Neo", sans-serif;
+    line-height:  1.7;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+hr {
+    margin-top: 20px;
+    color: inherit;
+    height: 0;
+    overflow: visible;
+}
+
+/*로그인 ul 수평정렬*/
+.user-nav {
+    display: flex;
+    font-size: 0.75rem;
+    list-style: none;
+    z-index: 2;
+    margin-top: 24px;
+}
+
+.user-nav li {
+    margin-left: 36px;
+}
+
+.user-nav a {
+    color: #ffffff;
+}
+
+
+/*로그인 페이지*/
+.header-wrap-sc {
+    color: #000;
+}
+
+.form-wrapper {
+    color: #000;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.login-form {
+    width: 410px;
+    min-height: 200px;
+    margin: 100px auto 100px;
+    text-align: center;
+    padding: 35px;
+}
+
+.login-form input[type="text"], .login-form input[type="password"] {
+    border: 1px solid silver;
+    margin-top: 20px;
+    width: 100%;  
+}
+
+.btn_wrap {
+    margin-top: 30px;
+}
+
+/* 로그인 아이콘 */
+.login_wrap .btn_wrap, .login_sns> a {
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    margin: 0 10px;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: top;
+}
+
+
+/* 아이디 비밀번호 저장 체크박스 */
+.form_holder input[type='checkbox'] {
+    float: left;
+    margin-top: 10px;
+    
+}
+
+.form_holder {
+    text-align: left;
+}
+
+
+/* 안됨 */
+/* .form_holder input[type='checkbox'], .form_holder input[type='radio'] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0 !important;
+} */
+
+.login-submit {
+    background-color: #e74c3c;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 5px 25px;
+    vertical-align: left;
+}
+
+.login-submit input[type="submit"] {
+    color: #fff;
+    
+}
+
+/* 회원가입 버튼 */
+.register-submit {
+    background-color: #E0E0E0;
+    border-radius: 5px;
+    margin-top: 30px;
+    height: 35px;
+    
+}
+
+.register-submit input[type="button"] {
+    color: #fff;
+  font: bold;    
+    
+}
+
+/* 아이디 비밀번호 찾기 */
+
+.login-btn-wrap {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.login-btn-wrap a {
+    text-align: center;   
+    text-decoration: none;
+    font-size: 0.9rem;
+    position: relative;
+    display: inline-block;
+    line-height: 1;    
+}
+
+.copywrite {
+    text-align: center;
+    font-size: 0.75rem;
+}

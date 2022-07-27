@@ -1,0 +1,866 @@
+@charset "utf-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+body{
+    font-family: 'Gowun Dodum', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    max-width: 1120px;
+    padding: 0 10px;
+}
+
+/* 위 메뉴 부분*/
+.topMenu {
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.topNav {
+    display: flex;
+    list-style-type: none;
+    font-size: 12px;
+    margin: 0px;
+}
+
+.topNav li {
+    margin: 15px 0px 0px 10px;
+
+}
+
+.topNav a {
+    color: black;
+}
+
+.topNav a:hover {
+    color: orangered;
+}
+
+/* 중간 메뉴 부분*/
+.midMenu {
+    display: flex;
+    justify-content: space-between;	
+    height: 80px;
+}
+
+.fl{
+    display: flex;
+    justify-content: space-between;
+    width: 630px;
+}
+
+.logo {
+    background-image: url("../images/logo.png");;
+    width: 190px;
+    height: 75px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.d-flex {
+    width: 400px;
+    height: 40px;
+    border: 2px solid #e74c3c;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto 0;
+}
+
+.d-flex input {
+    width: 300px;
+    height: 30px;	
+    margin: 4px 0px 6px 20px;
+    background-color: none;
+    border: 0;
+    font-size: 14px;
+    text-align: start;			
+}
+
+.d-flex a img {
+    margin: 11px 20px 11px 0px;
+    width: 18px;
+    height: 18px;
+}
+
+.fr ul {
+    display: flex;
+    font-size: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fr li {
+    margin-top: 12px;
+    margin-left: 20px;
+    background-color: none;
+    text-align: center;
+}
+
+.fr img {
+    height: 30px;
+}
+
+.fr a {
+    color: black;
+}
+
+.fr a:hover {
+    color: orangered;
+}
+
+/*아래 메뉴 navbar 부분*/
+.navbar {
+    background-color: #e74c3c;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar {
+    margin-top: 2px;
+}
+.nav-item {
+    padding: 0 25px;
+
+}
+.dropdown-item {
+    color: #e74c3c;
+}
+
+/*메뉴 부분 반응형 웹 적용*/
+@media screen and (max-width: 860px) {
+    .midMenu {
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fl {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo {
+        background-image: url("../images/logo_ver2.png");
+        height: 45px;
+        width: auto;
+        background-position: center;
+    }
+
+    .me-auto {
+        text-align: center;
+        padding: 0;
+    }
+
+    .fr li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .d-flex {
+        margin-top: 5px;
+    }
+    .fl{
+        width: 100%;
+    }
+}
+
+
+/*푸터 부분 스타일*/
+.footer {
+    background-color: #EDE5EA;
+    height: fit-content;
+    width: 100%;
+    padding-top: 10px ;
+}
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0 20px;;
+}
+
+.footerContent div {
+    width: fit-content;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footerContent div p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.ftextB {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.ftextT {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+/*푸터 스타일 반응형 웹 적용*/
+@media screen and (max-width: 800px) {
+    .footerContent {
+        flex-direction: column;
+    }
+
+}
+
+/*상세 내용 스타일*/
+.Title {
+    margin-top:  30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pic {
+    min-width: 300px;
+    height: 400px;
+}
+
+.textSmall {
+    color: gray;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.Title h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.Title p {
+    font-size: 18px;
+    line-height: 200%;
+}
+.review {
+    color: black;
+    padding: 0 15px;
+}
+
+
+.star {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.reviewG {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.midTitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+/*달력 부분*/
+.reservation-div {
+    margin: 10px 15px;
+}
+
+.subTile{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 0 15px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    
+}
+
+.clalendar  {
+    text-align: center;
+
+}
+
+#cal {
+    border-bottom: 2px solid #BDBDBD;
+    width: 95%;
+}
+
+.cal-top {
+    border-top: 2px solid #BDBDBD;
+    border-bottom: 1px solid #BDBDBD;
+    background-color: #EEEEEE;
+}
+
+#cal th {
+    padding: 10px;
+}
+
+#cal td {
+    border-top: 1px solid #BDBDBD;
+    border-bottom: 1px solid #BDBDBD;
+    padding: 10px;
+}
+
+.colToday {
+    background-color: #F0C1B4;
+}
+
+.caldisable {
+    background-color: #EEEEEE;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 655px) {
+    #cal {
+        width: 100%;
+    }
+}
+.if {
+    border: 2px solid #BDBDBD;
+    border-radius: 35px;
+    min-width: 300px;
+    height: max-content;
+    margin-top: 35px;
+
+}
+
+.select-button {
+    background-color: #E0E0E0;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-left: 85%;
+    display: inline-block;
+
+
+}
+
+.select-Title {
+    font: 18px;
+    font-weight: bold;
+    line-height: 150%;
+    padding: 0 10px 10px 10px;
+    margin: 10px;
+}
+
+.if-bottom {
+    border-top: 1px dashed #BDBDBD;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    display: none;
+}
+
+
+
+/*인원 선택 스타일*/
+.personnel {
+    border: 2px solid #BDBDBD;
+    border-radius: 35px;
+    min-width: 300px;
+}
+
+.personnel-div-top {
+    min-width: 300px;
+    margin: 10px 30px 5px 30px;
+    padding: 10px 15px 5px 15px;
+}
+
+.personnel-div-bottom {
+    min-width: 300px;
+    margin: 10px 30px;
+    padding:15px 15px 10px 15px;
+}
+
+.TextMidTitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.TextSubTitle {
+    font-size: 24px;
+    font-weight: blod;
+}
+
+.sum-button {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.sum-button button {
+    width: 40px;
+    min-width: 25px;
+    height: 40px;
+    background-color: #E0E0E0;
+    padding: 0 5px;
+    margin: 5px 20px;
+    border-radius: 50px;
+    vertical-align: middle;
+
+}
+
+.sum-button p {
+    margin-top: 7px;
+    width: 15px;
+}
+@media screen and (max-width: 715px) {
+    .sum-button-media {
+        margin-top: 40px;
+    }
+}
+
+
+.personnelSelect {
+    height: fit-content;
+    display: flex;
+    justify-content:space-between;
+}
+
+.PS {
+    width: 32%;
+    height: 100%;
+    text-align: center;
+}
+
+.PS p {
+    margin-bottom: 5px;
+}
+
+
+.sum {
+    height: auto;
+    border-top: 2px solid #BDBDBD;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sum span {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+#price {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.price-sum-table {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.price-sum-table th {
+    width: 25%;
+}
+
+.price-sum-table td {
+    font-size: 24px;
+    font-weight: bold;
+}
+.price-sum {
+    width: 70%;
+    text-align: end;
+}
+
+.price-sum-table-td {
+    width: 5%;
+    text-align: end;
+}
+
+/*예약 버튼*/
+.rbtn {
+    padding-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btnR {
+    background-color: #e74c3c;
+    color: #ffffff;
+    font-size: 18px;
+    width: 120px;
+    margin-right: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 25px;
+}
+
+
+.btnR a {
+    color: #ffffff;
+}
+
+.span {
+    color: #e74c3c;
+}
+
+
+
+.RBtn1 {
+    background-color: #E0E0E0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px 25px;
+    margin-right: auto;
+}
+
+.RBtn2 {
+    background-color: #e74c3c;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px 25px;
+}
+
+.RBtn3 {
+    background-color: #E0E0E0;
+    border-radius: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px 25px;
+}
+
+/*서브 메뉴 스타일*/
+.subMenu div {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.menubtn {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnM {
+    font-size: 18px;
+    background: #F0C1B4;
+    border: 2px solid #F0C1B4;
+    width: 100%;
+    height: 40px;
+    margin: 0 1px;
+}
+
+
+/*서브 메뉴 부분 반응형 웹 적용*/
+@media screen and (max-width: 600px) {
+    .btnM {
+        font-size: 15px;
+    }
+}
+
+/*서브 메뉴안 내용*/
+/*상세 정보 부분*/
+.content-1 {
+    margin: 0 15px;
+    text-align: center;
+    min-height: 650px;
+}
+
+.content-1 img {
+   width: 100%;
+}
+
+/*여행일정 부분*/
+.subMcontent {
+    border-top: 2px solid #F0C1B4;
+}
+
+.content-2 {
+    margin: 30px 15px;
+    min-height: 650px;
+}
+
+.schedule {
+    margin-top: 15px;
+}
+
+.accordion {
+    --bs-accordion-active-color: black;
+    --bs-accordion-active-bg: #e74d3c17;
+    --bs-accordion-btn-focus-border-color: #f0c1b49d;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(231, 76, 60, 0.25);
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e74c3c'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.scheduleTL {
+    width: 15%;
+}
+
+.scheduleBtnL {
+    width: 95%;
+}
+
+.scheduleTL P {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.STextT {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.STextSt {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.STextSc {
+    font-size: 14px;
+}
+
+.scheduleB p {
+    line-height: 150%;
+}
+
+#scheduleBtn1 {
+    min-width: 30px;
+    min-height: 30px;
+    margin: auto 10px;
+    background-image: url("../images/down1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#scheduleBtn2 {
+    min-width: 30px;
+    min-height: 30px;
+    margin: auto 10px;
+    background-image: url("../images/down1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.btnposition {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sdiv1 {
+    display: none;
+}
+
+.sdiv2 {
+    display: none;
+}
+
+.fixed { 
+    position: fixed; 
+    top: 0;
+}
+
+/*관광지 호텔*/
+.content-3 {
+    margin: 30px 15px;
+    min-height: 650px;
+}
+
+.sights-img img {
+    width: 100%;
+    min-width: 430px;
+    padding: 10px;
+}
+
+.sights-text p {
+    margin: 0 10px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 180%;
+}
+
+.sights-text-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hotel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotel iframe {
+    min-width: 430px;
+}
+
+.hotel table {
+    border-top: 2px solid #BDBDBD;
+    border-bottom: 2px solid #BDBDBD;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.hotel table th {
+    text-align: center;
+    padding: 7px 5px;
+    background-color: #EEEEEE;
+    border-top: 1px solid #BDBDBD;
+}
+
+.hotel table td {
+    text-align: center;
+    padding: 7px 5px;
+    border-top: 1px solid #BDBDBD;
+}
+
+
+/*유의사항*/
+.content-4 {
+    margin: 30px 15px;
+    min-height: 650px;
+}
+
+.content-4 p {
+    line-height: 150%;
+}
+
+/*상품문의*/
+.content-5 {
+    margin: 30px 15px;
+    min-height: 650px;
+}
+
+.content-5 p {
+    line-height: 150%;
+}
+
+.c5Ttile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cTextT {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.inquiryBtn {
+    background-color: #E0E0E0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px 25px;
+    vertical-align: left;
+}
+
+.inquiryBtn:hover {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+/*모달 부분*/
+.modal-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.form-control {
+    height: 150px;
+}
+
+.modalBtn1 {
+    background-color: #E0E0E0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px 25px;
+}
+
+.modalBtn2 {
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px 25px;
+}
+
+.inquiryTable {
+    border-top: 2px solid #BDBDBD;
+    border-bottom: 2px solid #BDBDBD;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.inquiryTable th {
+    text-align: center;
+    padding: 7px 5px;
+    background-color: #EEEEEE;
+}
+
+.inquiryTable td {
+    padding: 7px 5px;
+    border-top: 1px solid #BDBDBD;
+}
+
+#inT1 {
+    width: 18%;
+}
+
+#inT2 {
+    width: 52%;
+}
+
+#inT3 {
+    width: 15%;
+}
+
+#inT4 {
+    width: 15%;
+}
+
+.inTText {
+    text-align: center;
+}
+
+/*페이지 넘기는 버튼*/
+.page-nav {
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+}
+
+.page-link {
+    color: #000; 
+    background-color: #fff;
+    border: 1px solid #BDBDBD; 
+  }
+  
+  .page-item.active .page-link {
+   z-index: 1;
+   color: #555;
+   font-weight:bold;
+   background-color: #BDBDBD;
+   border-color: #BDBDBD;
+   
+  }
+  
+  .page-link:focus, .page-link:hover {
+    color: #000;
+    background-color: #EEEEEE; 
+    border-color: #BDBDBD;
+  }

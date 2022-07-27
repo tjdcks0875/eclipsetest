@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko"
+	  xmlns:th="http://www.thymeleaf.org">
+	  <head>
+	  <meta charset="UTF-8">
+	  	<title>footer</title>		  	
+	  </head>	   
+	  <body>
+	  	<footer th:fragment="footer">
+			<div class="footer">
+		        <div class="footerContent container">
+		            <div>
+		                <p><span class="ftextB">피닉스 투어 고객 센터
+		                    <br>1577-1234</span>
+		                    <br>
+		                    <br>자주 찾는 질문 > 
+		                    <br>ARS 상담번호 안내 > 
+		                </p>
+		            </div>
+		            <div>
+		                <p><span class="ftextT">여행문의</span>
+		                    <br>평일 : 09:00 ~ 18:00
+		                    <br>※ 코로나 바이러스19로 인한 근무 시간 축소로 주말 및 
+		                    <br>&nbsp;&nbsp;&nbsp;&nbsp;야간 상담 서비스가 임시 중단됩니다.
+		                    <br>&nbsp;&nbsp;&nbsp;&nbsp;더 나은 서비스로 찾아뵐 수 있도록 하겠습니다.
+		                </p>
+		            </div>
+		            <div>
+		                <p><span class="ftextT">상담 조회 알림</span>
+		                    <br>1번 예약 상담 및 조회
+		                    <br>2번 마일리지, 제휴카드, 상품권 및 기타문의
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+		
+		    <!--하단 로고 인증 부분-->
+		    <div>
+		        <div class="footerlogo">
+		            <img th:src="@{/images/한국관광협회중앙회2.png}" width="50px" height="50px">
+		            <p style="font-size: 1.125rem; margin-right: 30px;">한국관광협회 중앙회 인증업체</p>
+		            <img th:src="@{/images/한국스마트관광협회.png}" width="50px" height="50px">
+		            <p style="font-size: 1.125rem; margin-right: 30px;">한국 스마트 관광협회 인증업체</p>
+		            <img th:src="@{/images/대한민국 100대브랜드.png}" width="50px" height="50px">
+		            <p style="font-size: 1.125rem; margin-right: 30px;">대한민국 100대 브랜드</p>
+		            <img th:src="@{/images/브랜드파워.png}" width="50px" height="50px">
+		            <p style="font-size: 1.125rem;">2022 대한민국 브랜드 파워 1위</p>
+		        </div>
+		    </div>
+		</footer>
+	  </body>
+</html>

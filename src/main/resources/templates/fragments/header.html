@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko"
+	  xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+	  <head>
+	  	<meta charset="UTF-8">
+	  	<title>header</title>
+     </head>
+  <body>
+	  <header th:fragment="header">
+		<div class="container topMenu">
+      <ul class="topNav">
+        <li>
+          <a href="">로그인</a>
+            </li>
+              <li>
+                  <a href="">회원가입</a>
+              </li>
+              <li>
+                <a id="customer" href="">고객센터</a>
+              </li>
+          </ul>
+      </div>
+      <!--로고 부분-->
+      <div class="container midMenu">
+          <div class="fl">
+              <a th:href="@{/}">
+                      <div class="logo"></div>
+              </a>
+              <div class="search">
+                  <form class="d-flex">
+                      <input type="text" class="form-control me-2" placeholder="검색어를 입력해 주세요." aria-label="Search"> 
+                      <a href="">
+                          <img class="search_icon" th:src="@{/images/ico-search.png}">
+                      </a>
+                  </form>
+              </div>
+          </div>
+          <!--메뉴(네브바) 부분-->
+          <div class="fr">
+              <ul class=" me-auto">
+                  <li>
+                      <a th:href="@{/}">
+                          <img th:src="@{/images/mypage_icon.png}">
+                          <br>마이페이지
+                      </a>
+                  </li>
+                  <li>
+                      <a th:href="@{/}">
+                          <img th:src="@{/images/reservation_icon.png}">
+                          <br>예약내역
+                      </a>
+                  </li>
+                  <li>
+                      <a href="">
+                          <img th:src="@{/images/jjim_icon.png}">
+                          <br>찜
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>        
+      <div class="navbar navbar-dark navbar-expand-md">
+          <div class="container">          
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbar-content">
+                  <ul class="navbar-nav me-auto">
+                      <li class="nav-item dropdown navfont">
+                          <a th:href="@{/}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">전체메뉴</a>
+                          <div class="dropdown-menu">
+                              <a th:href="@{/}" class="dropdown-item">여행정보</a>
+                              <div class="dropdown-divider"></div>
+                              <a th:href="@{/}" class="dropdown-item">여행리뷰</a>
+                              <div class="dropdown-divider"></div>
+                              <a th:href="@{/}" class="dropdown-item">이벤트</a>
+                              <div class="dropdown-divider"></div>
+                              <a th:href="@{/}" class="dropdown-item">공지사항</a>
+                          </div>
+                      </li>
+                      <li class="nav-item navfont">
+                          <a th:href="@{/}" class="nav-link">여행정보</a>
+                      </li>
+                      <li class="nav-item navfont">
+                          <a th:href="@{/}" class="nav-link">여행리뷰</a>
+                      </li>
+                      <li class="nav-item navfont">
+                          <a th:href="@{/}" class="nav-link" id="eventPage">이벤트</a>
+                      </li>
+                      <li class="nav-item navfont">
+                          <a th:href="@{/}" class="nav-link">공지사항</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+   </header>
+  </body>
+</html>

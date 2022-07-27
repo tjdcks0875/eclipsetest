@@ -1,0 +1,394 @@
+@charset "UTF-8";
+
+#input {
+    height: 45px;
+    width: 340px;
+    padding: 10px;
+    margin-top: 13px;
+    margin-bottom: 11px;
+    border: 1px inset rgb(118, 118, 118);
+}
+
+input:checked+span {
+    color: #e74c3c;
+}
+
+.table {
+    height: 1000px;
+    border-collapse: collapse;  
+}
+
+.table .th {
+    text-align: center;
+    width: 200px;
+    background-color: rgb(238, 238, 238);
+    height: 90px;
+}
+
+#btn5 {
+    margin-left: 45%;
+    width: 120px;
+    height: 50px;
+    background-color: #e74c3c;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 25px;
+    vertical-align: left;
+}
+.container{
+    max-width: 950px;
+
+}
+#need1 #need2 #need3 {
+    margin-top: 13px;
+    margin-bottom: 11px;
+}
+#span{
+    margin: auto 10px;
+}
+#signup{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: -30px;
+}
+#dropdown{
+    width: 700px;
+    text-align: center;
+}
+.dropdown-item{
+    color: black;
+}
+
+h1 {
+    font-weight: 600;
+}
+p1 {
+    font-weight: 600;
+    font-size: x-large;
+    text-align: center;
+    padding: 0 auto;
+}
+.container1 {
+    display: flex;
+    justify-content: center;        
+}        
+.item1 {
+    text-align: center;
+}
+#file{
+    height: fit-content;  
+    margin-right: 180px;
+    margin-bottom: 10px    
+}
+
+#img{
+    width: 100%;
+    height: 100%;           
+}
+
+.box {
+    width: 465px;
+    height: 250px;
+    padding: 8px;
+}
+#five{
+    width: 210px;
+    height: 62px;            
+}
+#five2{
+    width: 150px;
+    height: 40px;
+    margin-right: 700px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p{  padding: 10px;
+    margin: 0 0;
+}
+#dropdownButton{
+    width: 700px;
+    height: 45px;
+    justify-content: center;
+    background-color: gray;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 25px;
+    margin: 0;
+}
+.btn {
+    background-color: gray;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 25px;
+    margin: 0;
+    width: auto;
+    margin-left: 100px;
+}
+.align{
+    width: 500px;
+    height: 294px;
+    margin-bottom: 150px;
+}
+
+.wrapper{
+    max-width: 1100px;
+    margin: auto;
+    height: auto;
+}
+#write {
+    margin-left: 1000px;
+}
+#myform {
+    text-align: center;
+}
+p3{
+    margin-right: 790px;
+}
+#icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 0;
+    position : relative;
+    top: 55px;
+    left: -470px;         
+}
+#section2{
+    margin-right: 800px;
+    padding: 10px;  
+}
+.review_box{
+    border: 1px solid black;
+    height: 150px;
+    width: 80%;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid gray;
+    opacity: 1;
+}
+
+.pagination{
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: black;
+}
+.pagination a{
+
+    color: black;
+}
+#myform fieldset{
+    display: inline-block; 
+    direction: rtl; 
+    border: 0; 
+}
+#myform fieldset legend{
+    text-align: left;
+    padding-left: 0%;
+
+}
+#myform input[type=radio]{
+    display: none;
+}
+#myform label{
+    font-size: 1.5em; 
+    color: transparent; 
+    text-shadow: 0 0 0 #f0f0f0;
+}
+#myform label:hover{
+    text-shadow: 0 0 0 #a00; 
+}
+#myform label:hover ~ label{
+    text-shadow: 0 0 0 #a00; 
+}
+#myform input[type=radio]:checked ~ label{
+    text-shadow: 0 0 0 #a00; 
+}
+@media screen and (max-width: 1000px) {
+    .container1 {
+        height: 80%;
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0;
+    }
+    .item2 {
+        height: 80%;
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .photo {
+        height: 80%;
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video img {
+        height: 80%;
+        width: 80%;
+    }
+    .btn write{
+
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 611px){
+    .review_box{
+        height: fit-content;
+    }
+
+}
+@media screen and (max-width: 1140px){
+    .table{
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+#snb.snb{
+    margin: 0px;
+    margin-right: 20px;
+    padding: 0px;
+    display: block;
+    width: 150px;
+    float: left;
+    overflow: hidden;
+    margin-top: 68px;
+
+}
+
+.sub-menu {
+    list-style: none;
+    font-size: 15px;
+    font-weight: 400;
+    height: 50px;
+    line-height: 48px;
+    display: block;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.sub-menu a {
+    color: rgb(51, 51, 51);
+    line-height: 14px;
+}
+
+.sub-menu a:hover {
+    color: orangered;
+}
+
+ul .sub-menu{
+    padding-left: 0px;
+}
+
+.sub-menu li {
+     border-bottom: 1px gray solid;
+}
+
+#product{
+    border-bottom: 1px black solid;
+}
+
+.sub-title {
+     font-size: 24px;
+     padding: 0 0px 20px;
+     border-bottom: 2px black solid;
+     font-weight: normal;
+     font-size: 25px;  
+}
+.sub-title a {
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+}
+
+.text-title{
+    display: flex;
+    width: 950px;
+}
+
+.tabs{
+    display: flex;
+    list-style: none;
+    max-width: 950px;
+    height: 50px;
+    white-space: nowrap;
+    padding: 0;
+}
+
+.tabs li{
+    justify-content: flex-start;
+    border: 1px black solid;
+    margin-right: 0;
+    background-color: #f0eae6;
+    width: 317px;  
+    border-right-style: hidden;
+    text-align: center;
+    line-height: 45px;
+}
+
+.tabs a{
+    font-size: 20px;
+    color: rgb(51, 51, 51);
+}
+
+.tabs li #normal{
+    border-right: none;
+}
+
+/*1. 공통부분 작성*/
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Gowun Dodum', sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*2. 본문*/
+.All-Wrapper {
+    display: flex;
+    max-width: 1100px;
+    margin-top: 50px;
+    margin:auto;
+    padding: 0;
+    letter-spacing: -0.4px;
+    font-weight: 400;
+    height: auto;
+    min-height: 100%;
+}
+
+.All-Wrapper-fix {
+    display: block;
+    max-width: 1100px;
+    margin-top: 50px;
+    margin:auto;
+    padding: 0;
+    letter-spacing: -0.4px;
+    font-weight: 400;
+    height: auto;
+    min-height: 100%;
+}

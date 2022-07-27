@@ -1,0 +1,679 @@
+@charset "UTF-8";
+
+/*1. 공통부분 작성*/
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Gowun Dodum', sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*2. 본문*/
+.All-Wrapper {
+    display: flex;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0;
+    letter-spacing: -0.4px;
+    font-weight: 400;
+    height: auto;
+    min-height: 100%;
+}
+
+.All-Wrapper-fix {
+    display: block;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0;
+    letter-spacing: -0.4px;
+    font-weight: 400;
+    height: auto;
+    min-height: 100%;
+}
+
+.notice-title{
+    margin-right: 120px;
+}
+
+table{
+    font-size: 22px;
+}
+
+.notice-top {
+    margin-top: 0%;
+    margin-left: 20px;
+    width: 300px;
+    padding: 10px;  
+}
+
+.notice-top th{
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+.txt-title{
+    display: flex;
+    height: 60px;
+    width: 950px;
+    margin-bottom: 20px;
+}
+
+
+
+.big-tit p{
+    font-size: 24px;
+    margin-right: 550px;
+    color: rgb(51, 51, 51);
+    white-space: nowrap;
+    
+}
+
+.dropdown-bd{
+    margin-right: 5px; 
+}
+
+#dropdownMenuButton1{
+    background-color: #fff;
+    width: 100px;
+    height: 40px;
+    margin-top: 20px; 
+    color: rgb(51,51,51);
+}
+
+.bd-search {
+    width: 250px;
+    height: 40px;
+    border: 2px solid lightgray;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: flex;
+    margin: 20px auto 0;
+    
+    
+}
+
+.bd-search input {
+    width: 180px;
+    height: 30px;	
+    margin: 4px 0px 6px 20px;
+    background-color: none;
+    border: 0;
+    font-size: 14px;
+    text-align: start;			
+}
+
+#bd-sc-img{
+    max-width: 16px;
+    max-height: 16px;
+    margin-top: 2px;
+    margin-left: 15px;
+}
+
+
+
+/*3. 사이드 nav */
+.snb{
+    margin: 0 20px 20px 0;
+    padding: 0px;
+    display: block;
+    width: 150px;
+
+}
+
+.sub-menu {
+    list-style: none;
+    font-size: 15px;
+    font-weight: 400;
+    height: 50px;
+    line-height: 48px;
+    display: block;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.sub-menu a {
+    color: rgb(51, 51, 51);
+    line-height: 14px;
+}
+
+.sub-menu a:hover {
+    color: orangered;
+}
+
+ul .sub-menu{
+    padding-left: 0px;
+}
+
+.sub-menu li {
+     border-bottom: 1px gray solid;
+}
+
+#product{
+    border-bottom: 1px black solid;
+}
+
+.sub-title {
+     font-size: 24px;
+     padding: 0 0px 20px;
+     border-bottom: 2px black solid;
+     font-weight: normal;  
+}
+.sub-title a {
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+}
+
+.text-title{
+    display: flex;
+    width: 950px;
+}
+
+.tabs{
+    display: flex;
+    list-style: none;
+    max-width: 950px;
+    height: 60px;
+    white-space: nowrap;
+    padding: 0;
+}
+
+.tabs li{
+    justify-content: flex-start;
+    border: 1px black solid;
+    margin-right: 0;
+    background-color: #eee;
+    width: 317px;  
+    border-right-style: hidden;
+    text-align: center;
+    line-height: 55px;
+    
+}
+
+.tabs a{
+    font-size: 20px;
+    color: rgb(51,51,51);
+}
+
+.tabs li #normal{
+    border-right: none;
+}
+
+/* 4. 테이블 */
+.tg{
+    width: 950px;
+    border-top: 2px solid #BDBDBD;
+    border-bottom: 2px solid #BDBDBD;
+    border-left: none;
+    border-right: none;
+    height: auto;
+}
+
+th {
+    border-right: 1px solid #BDBDBD;
+    border-bottom: 1px solid #BDBDBD;
+    text-align: center;
+    font-size: 16px;
+    height: 80px;
+}
+
+td {
+    border-right: 1px solid #BDBDBD;
+    border-bottom: 1px solid #BDBDBD;
+    text-align: center;
+    font-size: 16px;
+    height: 70px;
+}
+
+
+.tb-sub-dat{
+    border-right: none;
+}
+
+.tb-sub-tit{
+    text-align: start;
+    padding-left: 30px;
+}
+
+.tb-head{
+    text-align: center;
+    height: 80px;
+    background-color: #eeeeee;
+    border-left: none;
+    border-right: none;
+}
+
+.tb-head th{
+    font-size: 21px;
+    height: 50px;
+}
+
+.tb-num{
+    width: 10%; 
+}
+
+.tb-div{
+    width: 13%;     
+}
+
+.tb-tit{
+    width: 60%; 
+}
+
+.tb-dat{
+    width: 25%;
+    border-right: none; 
+}
+
+.pagination{
+    margin-top: 20px;
+   justify-content: center;
+}
+
+.pagination a {
+     color: black;
+}
+
+/* 5.공지사항ex */
+.notice-board-wrap .nb-head{
+    border-top: 1px solid #999;
+    padding: 20px 120px 20px 20px;
+    border-bottom: 1px solid #dadce1;
+    background-color: #fff;
+    position: relative;
+    line-height: 24px; 
+}
+
+.notice-board-wrap{
+    margin-top: none;
+}
+
+.state{
+    color: #E74C3C;
+}
+
+.nb-head span{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.nb-head .state{
+    margin-right: 10px;
+}
+
+.nb-head .date {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+.nb-cont{
+    border-bottom: 1px solid #dadce1;
+    padding: 25px 30px;
+    min-height: 400px;
+    line-height: 24px;
+}
+
+.btn-wrap {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-wrap .btn-bd-cont{
+    background-color: #e74c3c;
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 25px;
+    vertical-align: left;
+    width: 120px;
+    height: 55px;
+}
+
+.pg-updown{
+    margin-top: 80px;
+    margin-bottom: 70px;
+    padding-left: 0;
+    border-top: 1px solid #838999;
+    border-bottom: 1px solid #838999;
+    list-style-type: none;
+}
+
+#updown{
+    max-width: 16px;
+    max-height: 16px;
+    margin-right: 15px;
+}
+
+.pg-updown li{
+    border-bottom: 1px solid #dadce1;
+    padding: 15px 20px;
+}
+
+.pg-updown li span{
+    padding-right: 15px;
+}
+
+.pg-updown li a{
+    color: rgb(51,51,51);
+}
+
+#pdt-ex{
+    width: 950px;
+}
+
+/* 6.관리자 */
+
+.admin-title{
+    display: flex;
+    width: 950px;
+}
+
+.tb-man{
+    border-right: none;
+}
+
+.tb-man a{
+    top: -50px;
+}
+
+.tb-man #mng{
+    max-width: 35px;
+    max-height: 30px;
+    position: center;
+}
+
+.admin-bd-search {
+    width: 250px;
+    height: 40px;
+    border: 2px solid lightgray;
+    border-radius: 30px;
+    display: flex;
+    margin: 25px auto 0;
+    margin-left: 50px;
+    
+}
+
+.admin-bd-search input {
+    width: 180px;
+    height: 30px;	
+    margin: 4px 0px 6px 20px;
+    background-color: none;
+    border: 0;
+    font-size: 14px;
+    text-align: start;			
+}
+
+.admin-bd-search #bd-sc-img{
+    max-width: 16px;
+    max-height: 16px;
+    margin-top: 2px;
+    margin-left: 15px;
+}
+
+.product-title{
+    display: block;
+    height: 200px;
+    margin-bottom: 5px;
+    width: 1100px;
+}
+
+.notice-board-wrap .admin-nb-head{
+    border-top: 2px solid #bdbdbd;
+    border-bottom: 2px solid #bdbdbd;
+    background-color: #fff;
+    position: relative;
+    line-height: 24px;
+    height: 560px;
+    padding-top: 20px;
+    
+}
+
+.admin-nb-head {
+    display: flex;
+}
+
+.admin-nb-cont{
+    border-bottom: 2px solid #bdbdbd;
+    min-height: 250px;
+    line-height: 24px;
+    margin-top: 50px;
+}
+
+.btn-wrap {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-wrap .btn-bd-cont{
+    background-color: #e74c3c;
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 25px;
+    vertical-align: left;
+    width: 120px;
+    height: 55px;
+}
+
+#tg-ad-dat{
+    max-width: 15px;
+    background-color: #eeeeee;
+    border-right: none;
+}
+
+#tg-ad-loc{
+    max-width: 15px;
+    background-color: #eeeeee;
+    border-right: none;
+}
+
+#tg-ad-etc{
+    max-width: 10px;
+    background-color: #eeeeee;
+    border-right: none;
+}
+
+
+#tg-pro{
+    background-color: #eeeeee;
+    border-right: none;
+}
+
+
+#tg-pro-sb{
+    border-right: none;
+}
+
+.reserve-title{
+    display: block;
+    height: 250px;
+    margin-bottom: 50px;
+    max-width: 1100px;
+}
+
+#reserve-txt{
+    text-align: center;
+}
+
+.reserve-nb-head {
+    display: block;
+    border-bottom: none;
+    padding-top: 30px;
+    border-top:1px solid #bdbdbd;
+    padding-bottom: 30px;
+    border-bottom:1px solid #bdbdbd;
+}
+
+.reserve-nb-cont{
+    min-height: 250px;
+    line-height: 24px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+#reserve-txt2{
+    text-align: center;
+}
+
+#tg-res{
+    background-color: #eeeeee;
+    border-right: none;
+    width: 140px;
+}
+
+.ad-tg{
+    width: 1100px;
+    border-top: 2px solid #BDBDBD;
+    border-bottom: 2px solid #BDBDBD;
+    border-left: none;
+    border-right: none;
+}
+
+.btn-ad-pro{
+    background-color: #fff;
+    font-size: 15px;
+    color: rgb(51,51,51);
+    border-radius: 5px;
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.btn-ad-pro1{
+    background-color: #fff;
+    font-size: 15px;
+    color: rgb(51,51,51);
+    border-radius: 5px;
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.ed-dl-wrap{
+    display: flex;
+    justify-content: center;
+}
+
+#ed-dl-span{
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    padding-left: 5px;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+#ed-dl-span1{
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+#ed-dl{
+    margin-top: 10px;
+    width: 19px;
+    height: 19px;
+}
+
+/* 7.반응형*/
+
+@media screen and (max-width: 860px){
+    .All-Wrapper {
+    width: auto;
+    flex-direction: column-reverse
+    }
+    
+    .All-Wrapper-fix {
+        width: auto;
+        flex-direction: column-reverse
+    }
+
+    .tg{
+    width: auto;
+    table-layout: fixed;
+    justify-content: center;
+    width: 100%;
+   }
+
+   .ad-tg{
+    width: auto;
+    table-layout: fixed;
+    justify-content: center;
+    width: 100%;
+   }
+
+   .snb{
+    width: auto;
+    margin-bottom: 100px;
+   }
+   
+ 
+   .big-tit p{
+    display: block;
+    margin: auto;
+    margin-right: 350px;
+   }
+   
+   .nb-cont #pdt-ex{
+    width: auto;
+   }
+   .ad-tg input {
+    width: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   }
+}
+
+@media screen and (max-width: 500px){
+   .big-tit p{
+    display: block;
+    margin: auto;
+    margin-right: 80px;
+   }
+
+   .nb-cont #pdt-ex{
+    width: 350px;
+   }
+
+   .ad-tg input {
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   }
+}
+
+.ad-tg input {
+    width: 100%;
+}
+
+/* 푸터로고 */
+.footerlogo{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
